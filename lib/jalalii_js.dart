@@ -216,16 +216,16 @@ class _JalaaliBreaks {
 
   _JalaaliBreaks({required this.leap, required this.gy, required this.march});
 
-  /// This determines if the Jalaali (Persian) year is
+  /// This determines if the Jalali (Persian) year is
   /// leap (366-day long) or is the common year (365 days), and
   /// finds the day in March (Gregorian calendar) of the first
-  /// day of the Jalaali year (jy).
+  /// day of the Jalali year (jy).
   ///
   /// [1. see here](http://www.astro.uni.torun.pl/~kb/Papers/EMP/PersianC-EMP.htm)
   ///
   /// [2. see here](http://www.fourmilab.ch/documents/calendar/)
   factory _JalaaliBreaks.cal(int jy) {
-    // Jalaali years starting the 33-year rule.
+    // Jalali years starting the 33-year rule.
     final breaks = [
       -61,
       9,
